@@ -1,0 +1,10 @@
+.item{
+  margin: 10px;
+  padding: 10px;
+
+  border:2px solid black;
+  border-radius: 20px;
+
+  text-align: center;
+
+}
