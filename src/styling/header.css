@@ -1,0 +1,74 @@
+body {
+    scroll-behavior: smooth;
+    /* scrollbar-width: none; */
+}
+
+.logo,
+.menu-button {
+    margin: 1rem;
+    border: 0.25rem solid black;
+    padding: 0.5rem;
+    border-radius: 40px;
+    box-shadow: 4px 4px 0px rgb(158, 158, 158);
+}
+
+.logo {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 10px;
+}
+
+.nav-bar {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 10px;
+}
+
+.menu-button {
+    width: 6rem;
+    text-align: center;
+    background-color: white;
+}
+
+.menu-large,
+.menu-small {
+    /* width: 5rem; */
+}
+
+
+.menu-large {
+    padding: 1rem 0;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    /* background-color: rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(5px); */
+    /* pointer-events: none; */
+    /* opacity: 0; */
+    display: none;
+    transform: translateY(-10px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.menu-small:active + .menu-large {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.logo:hover,
+.menu-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.logo:active,
+.menu-button:active {
+    box-shadow: none;
+}
+
+.menu-large:active {
+    transition: all 0.1s ease-in-out;
+    /* transform: ; */
+}

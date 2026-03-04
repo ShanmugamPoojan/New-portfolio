@@ -1,0 +1,19 @@
+.home-page{
+  margin-top: 4rem ;
+}
+.home-page > div{
+  height: 600px;
+}
+
+.image{
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  border: 2px solid black;
+
+  background-image: url("../assets/Copy.png");
+  background-size: cover;
+  background-position: center;
+}
