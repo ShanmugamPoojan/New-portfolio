@@ -1,105 +1,108 @@
-body {
-    scroll-behavior: smooth;
-}
-
-.menu-button {
-    margin: 1rem;
-    border: 2px solid #E64833;
-    padding: 0.75rem 1.25rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-}
-
-.logo {
-    margin: 1rem;
-    transition: all 0.3s ease;
+.header {
     position: fixed;
-    z-index: 10000;
-    height: 70px;
-    width: 70px;
-    top: 0;
-    left: 10px;
-    border-radius: 50%;
-    color: #FBE9D0;
-    animation: slideInLeft 0.5s ease;
-    background-image: url(../assets/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 50px;
+    top: 0px; /* adds floating effect */
+    
+    left: 50%;
+    transform: translateX(-50%); /* centers it */
+
+    width: 50%;
+    max-width: 900px; 
+
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid var(--border);
+    /* border-radius: 12px; */
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* floating effect */
+
+    z-index: 1000;
 }
 
-@keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-30px); }
-  to { opacity: 1; transform: translateX(0); }
+/* DESKTOP NAV */
+.nav-links {
+    display: flex;
+    gap: 4rem;
 }
 
-.logo:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 0 15px rgba(230, 72, 51, 0.4);
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono';
+    font-size: 1.3rem;
+    position: relative;
 }
 
-.logo span {
-    display: block;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.nav-bar {
-    position: fixed;
-    z-index: 10000;
-    top: 0;
-    right: 10px;
-}
-
-.menu-button {
-    background: transparent;
-    color: var(--accent);
-    border: 2px dashed var(--border);
-    font-family: 'IBM Plex Mono', monospace;
-    letter-spacing: 2px;
-}
-
-.menu-button:hover {
+/* UNDERLINE EFFECT */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 1px;
     background: var(--accent);
-    color: #1b1b1b;
-    transform: rotate(-2deg) scale(1.05);
+    transition: 0.3s;
 }
 
-.menu-large,
-.menu-small {
-    cursor: pointer;
+.nav-links a:hover::after {
+    width: 100%;
 }
 
-.menu-large {
-    background: #111;
-    border: 2px solid var(--border);
-    box-shadow: 6px 6px 0px var(--border);
+/* ACTIVE */
+.nav-links a.active {
+    color: var(--accent);
+}
+/* ENTRY */
+.slide-in {
+  animation: slideIn 0.3s ease forwards;
 }
 
-.menu-large a {
-    display: block;
-    margin: 0.5rem 0;
-    transition: all 0.3s ease;
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
 }
 
-.menu-large a:hover {
-    transform: translateX(10px);
+/* EXIT */
+.slide-out {
+  animation: slideOut 0.3s ease forwards;
 }
 
-.menu-large a.active .menu-button {
-    background-color: rgba(230, 72, 51, 0.3);
-    border-color: #E64833;
-    box-shadow: 0 0 10px rgba(230, 72, 51, 0.3);
+.fade-out {
+  animation: fadeOut 0.3s ease forwards;
 }
 
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+/* KEYFRAMES */
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .header {
+        width: 100%;
+        height: 80px;
     }
 }

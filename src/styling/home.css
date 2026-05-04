@@ -1,7 +1,8 @@
 .home-page {
-  margin-top: 6rem;
-  margin-bottom: 4rem;
-  background: #FBE9D0;
+  /* margin-top: 6rem; */
+  padding: 10rem;
+  /* margin-bottom: 4rem; */
+  background: var(--bg-main);
   position: relative;
 }
 
@@ -23,10 +24,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 4rem auto;
-  padding: 4rem 2rem;
+  margin: auto;
+  padding: 1rem;
   width: 90%;
-  max-width: 800px;
+  max-width: 850px;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -99,7 +100,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin: 10rem 0;
   align-items: center;
   width: 100%;
 }

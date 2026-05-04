@@ -1,10 +1,9 @@
 .projects-page {
     margin: auto;
-    margin-top: 6rem;
+    padding: 6rem 0;
     width: 100%;
     min-height: 70vh;
     background: #FBE9D0;
-    padding-bottom: 4rem;
 }
 
 .projects-header {
