@@ -20,7 +20,7 @@ function Header() {
                 <span>SP</span>
             </div>
             <div className="nav-bar">
-                <div className='menu-small' onClick={() => setMenuOpen(!menuOpen)}>
+                <div className='menu-small' onClick={() => setMenuOpen(prev => !prev)}>
                     <div className="menu-button">MENU</div>
                 </div>
                 {menuOpen && (

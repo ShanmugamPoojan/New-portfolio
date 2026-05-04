@@ -72,7 +72,6 @@ body {
     background-color: rgba(36, 72, 85, 0.95);
     border: 2px solid #E64833;
     border-radius: 0.5rem;
-    display: none;
     animation: slideDown 0.3s ease-in-out;
     box-shadow: 0 8px 16px rgba(230, 72, 51, 0.2);
 }
