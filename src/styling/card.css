@@ -1,0 +1,35 @@
+
+.card-description {
+    color: #FBE9D0;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-title {
+    margin: 0;
+    color: #E64833;
+    font-size: 1.4rem;
+}
+
+.card-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: linear-gradient(135deg, #90AEAD 0%, #244855 100%);
+    color: #FBE9D0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}

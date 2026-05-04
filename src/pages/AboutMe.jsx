@@ -18,7 +18,7 @@ function AboutMe() {
   return (
     <div className="aboutme-page">
       <div className="about-container">
-        <div className="about-header">
+        <div className="about-header section">
           <h1>👤 About Me</h1>
           <p className="subtitle">Get to know me better</p>
         </div>

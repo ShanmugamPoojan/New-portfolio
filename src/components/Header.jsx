@@ -1,5 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
-import '../styling/Header.css'
+import '../styling/header.css'
+import '../styling/card.css'
+import logo from '../assets/logo.png'
 import { useState } from 'react';
 
 function Header() {
@@ -17,7 +19,7 @@ function Header() {
     return (
         <>
             <div className='logo'>
-                <span>SP</span>
+                {/* <span><img src={logo} alt="Logo" /></span> */}
             </div>
             <div className="nav-bar">
                 <div className='menu-small' onClick={() => setMenuOpen(prev => !prev)}>

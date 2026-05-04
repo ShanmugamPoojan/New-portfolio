@@ -2,7 +2,6 @@ body {
     scroll-behavior: smooth;
 }
 
-.logo,
 .menu-button {
     margin: 1rem;
     border: 2px solid #E64833;
@@ -14,16 +13,20 @@ body {
 }
 
 .logo {
+    margin: 1rem;
+    transition: all 0.3s ease;
     position: fixed;
     z-index: 10000;
+    height: 70px;
+    width: 70px;
     top: 0;
     left: 10px;
-    background-color: #E64833;
+    border-radius: 50%;
     color: #FBE9D0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     animation: slideInLeft 0.5s ease;
+    background-image: url(../assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @keyframes slideInLeft {
@@ -50,16 +53,17 @@ body {
 }
 
 .menu-button {
-    width: 7rem;
-    text-align: center;
-    background-color: #244855;
-    color: #E64833;
+    background: transparent;
+    color: var(--accent);
+    border: 2px dashed var(--border);
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 2px;
 }
 
 .menu-button:hover {
-    background-color: rgba(230, 72, 51, 0.1);
-    box-shadow: 0 0 10px rgba(230, 72, 51, 0.4);
-    transform: translateY(-2px);
+    background: var(--accent);
+    color: #1b1b1b;
+    transform: rotate(-2deg) scale(1.05);
 }
 
 .menu-large,
@@ -68,12 +72,9 @@ body {
 }
 
 .menu-large {
-    padding: 1rem;
-    background-color: rgba(36, 72, 85, 0.95);
-    border: 2px solid #E64833;
-    border-radius: 0.5rem;
-    animation: slideDown 0.3s ease-in-out;
-    box-shadow: 0 8px 16px rgba(230, 72, 51, 0.2);
+    background: #111;
+    border: 2px solid var(--border);
+    box-shadow: 6px 6px 0px var(--border);
 }
 
 .menu-large a {
