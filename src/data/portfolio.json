@@ -1,0 +1,163 @@
+{
+  "profile": {
+    "name": "Shanmugam Poojan S",
+    "title": "Full Stack Developer",
+    "subtitle": "Full Stack Developer | Creative Problem Solver",
+    "description": "Building beautiful and interactive web experiences with React, Node.js, and modern web technologies.",
+    "email": "shanmugam@example.com",
+    "phone": "+91 XXXXXXXXXX",
+    "location": "India"
+  },
+  "hero": {
+    "title": "Hey, I'm Shanmugam",
+    "subtitle": "Full Stack Developer | Creative Problem Solver",
+    "description": "Building beautiful and interactive web experiences with React, Node.js, and modern web technologies.",
+    "cta": [
+      {
+        "text": "View My Work",
+        "type": "primary",
+        "action": "projects"
+      },
+      {
+        "text": "Get In Touch",
+        "type": "secondary",
+        "action": "contact"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "id": 1,
+      "name": "React",
+      "icon": "⚛️"
+    },
+    {
+      "id": 2,
+      "name": "Node.js",
+      "icon": "🟢"
+    },
+    {
+      "id": 3,
+      "name": "Databases",
+      "icon": "🗄️"
+    },
+    {
+      "id": 4,
+      "name": "UI/UX Design",
+      "icon": "🎨"
+    }
+  ],
+  "skillsList": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "MongoDB",
+    "CSS/HTML",
+    "Git",
+    "REST API",
+    "MySQL"
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "icon": "🛍️",
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce solution with payment integration",
+      "tags": ["React", "Node.js", "MongoDB"],
+      "image": "project1.png",
+      "link": "https://github.com/shanmugampos/ecommerce",
+      "liveUrl": "https://ecommerce-demo.com"
+    },
+    {
+      "id": 2,
+      "icon": "✅",
+      "title": "Task Management App",
+      "description": "Collaborative task manager with real-time updates",
+      "tags": ["React", "Firebase", "Tailwind"],
+      "image": "project2.png",
+      "link": "https://github.com/shanmugampos/taskapp",
+      "liveUrl": "https://taskmanager-demo.com"
+    },
+    {
+      "id": 3,
+      "icon": "🌤️",
+      "title": "Weather Dashboard",
+      "description": "Real-time weather app with location services",
+      "tags": ["React", "API", "Charts.js"],
+      "image": "project3.png",
+      "link": "https://github.com/shanmugampos/weather",
+      "liveUrl": "https://weather-dashboard.com"
+    },
+    {
+      "id": 4,
+      "icon": "💼",
+      "title": "Portfolio Website",
+      "description": "Personal portfolio with smooth animations and transitions",
+      "tags": ["React", "Vite", "CSS"],
+      "image": "project4.png",
+      "link": "https://github.com/shanmugampos/portfolio",
+      "liveUrl": "https://shanmugampoojan.github.io/New-portfolio"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "icon": "🚀",
+      "title": "Full Stack Developer",
+      "duration": "2023 - Present",
+      "description": "Building web applications with React, Node.js, and various databases."
+    },
+    {
+      "id": 2,
+      "icon": "🎨",
+      "title": "Frontend Developer",
+      "duration": "2022 - 2023",
+      "description": "Created responsive and interactive UI components using React and CSS."
+    }
+  ],
+  "journey": [
+    {
+      "id": 1,
+      "milestone": "Started Learning Web Development",
+      "year": "2021",
+      "icon": "📚",
+      "description": "Began my journey with HTML, CSS, and JavaScript fundamentals."
+    },
+    {
+      "id": 2,
+      "milestone": "Mastered React",
+      "year": "2022",
+      "icon": "⚛️",
+      "description": "Deep dive into React ecosystem, hooks, and component design patterns."
+    },
+    {
+      "id": 3,
+      "milestone": "Full Stack Development",
+      "year": "2023",
+      "icon": "🖥️",
+      "description": "Extended skills to backend with Node.js and database management."
+    },
+    {
+      "id": 4,
+      "milestone": "First Professional Role",
+      "year": "2023 - Present",
+      "icon": "🚀",
+      "description": "Working on real-world projects and collaborating with teams."
+    }
+  ],
+  "achievements": [
+    "✨ Built and deployed 10+ projects",
+    "✨ Contributed to open-source projects",
+    "✨ Solved complex technical challenges",
+    "✨ Continuously learning new technologies"
+  ],
+  "about": {
+    "intro": "I'm a passionate full-stack developer from India with a love for creating beautiful, functional web experiences. I specialize in modern web technologies and am always eager to learn new things.",
+    "interests": "When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community. I'm also interested in web design, UI/UX principles, and building products that solve real-world problems."
+  },
+  "social": {
+    "github": "https://github.com/shanmugampos",
+    "linkedin": "https://linkedin.com/in/shanmugam",
+    "twitter": "https://twitter.com/shanmugampos"
+  }
+}
