@@ -17,8 +17,9 @@ function Home() {
     <div className="home-page">
       <div className='hero-section'>
         <div className='hero-content'>
-          <div className='hero-greeting'>👋 Welcome</div>
-          <h1 className='hero-title'>Hey, <br />{heroData.title}</h1>
+          <h1 className='hero-title'>
+            <span className='typewriter'>Hey, <br />{heroData.title}</span>
+          </h1>
           <p className='hero-subtitle'>{heroData.subtitle}</p>
           <p className='hero-description'>{heroData.description}</p>
         </div>

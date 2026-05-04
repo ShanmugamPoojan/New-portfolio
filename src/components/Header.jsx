@@ -12,12 +12,22 @@ function Header() {
     return (
         <header className="header">
 
-            {/* DESKTOP NAV */}
             <nav className="nav-links">
-                <Link to="/" className={isActive('/') ? 'active' : ''}>Home</Link>
-                <Link to="/projects" className={isActive('/projects') ? 'active' : ''}>Projects</Link>
-                <Link to="/myjourney" className={isActive('/myjourney') ? 'active' : ''}>My Journey</Link>
-                <Link to="/aboutme" className={isActive('/aboutme') ? 'active' : ''}>About</Link>
+                <Link to="/" className={`nav-item ${isActive('/') ? 'active' : ''}`}>
+                    Home
+                </Link>
+
+                <Link to="/projects" className={`nav-item ${isActive('/projects') ? 'active' : ''}`}>
+                    Projects
+                </Link>
+
+                <Link to="/myjourney" className={`nav-item ${isActive('/myjourney') ? 'active' : ''}`}>
+                    My Journey
+                </Link>
+
+                <Link to="/aboutme" className={`nav-item ${isActive('/aboutme') ? 'active' : ''}`}>
+                    About
+                </Link>
             </nav>
 
         </header>

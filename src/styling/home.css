@@ -1,6 +1,6 @@
 .home-page {
   /* margin-top: 6rem; */
-  padding: 10rem;
+  padding: 10rem 0;
   /* margin-bottom: 4rem; */
   background: var(--bg-main);
   position: relative;
@@ -27,12 +27,14 @@
   margin: auto;
   padding: 1rem;
   width: 90%;
-  max-width: 850px;
+  max-width: 1000px;
   background: transparent;
   border: none;
   box-shadow: none;
   text-align: center;
   position: relative;
+
+  /* border: 1px solid black;; */
 }
 
 .hero-section::before {
@@ -71,13 +73,35 @@
   letter-spacing: 3px;
   font-weight: 900;
   line-height: 1.2;
-  text-transform: uppercase;
-  animation: slideInLeft 0.8s ease;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
-@keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-30px); }
-  to { opacity: 1; transform: translateX(0); }
+/* TYPEWRITER EFFECT */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #244855; /* cursor */
+  
+  width: 0;
+  animation: typing 2.5s steps(20, end) forwards,
+             blink 0.7s step-end infinite;
+}
+
+/* MULTI-LINE SUPPORT */
+.typewriter br {
+  display: block;
+}
+
+/* TYPING */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* CURSOR BLINK */
+@keyframes blink {
+  50% { border-color: transparent }
 }
 
 .hero-subtitle {
@@ -119,12 +143,13 @@
 }
 
 .featured-section {
-  margin: 6rem auto 4rem;
-  padding: 4rem 2rem;
-  width: 90%;
-  max-width: 1000px;
+  margin: 6rem 0;
+  padding: 8rem 2rem;
+  /* width: 90%; */
+  /* max-width: 1000px; */
   text-align: center;
   background: transparent;
+  background-color: var(--bg-secondary);
 }
 
 .featured-section h2 {
