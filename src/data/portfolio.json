@@ -22,6 +22,16 @@
         "text": "Get In Touch",
         "type": "secondary",
         "action": "contact"
+      },
+      {
+        "text": "View My Work",
+        "type": "primary",
+        "action": "projects"
+      },
+      {
+        "text": "Get In Touch",
+        "type": "secondary",
+        "action": "contact"
       }
     ]
   },
@@ -139,6 +149,20 @@
     },
     {
       "id": 4,
+      "milestone": "First Professional Role",
+      "year": "2023 - Present",
+      "icon": "🚀",
+      "description": "Working on real-world projects and collaborating with teams."
+    },
+    {
+      "id": 5,
+      "milestone": "First Professional Role",
+      "year": "2023 - Present",
+      "icon": "🚀",
+      "description": "Working on real-world projects and collaborating with teams."
+    },
+    {
+      "id": 6,
       "milestone": "First Professional Role",
       "year": "2023 - Present",
       "icon": "🚀",

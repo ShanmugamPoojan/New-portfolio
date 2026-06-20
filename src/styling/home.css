@@ -1,22 +1,33 @@
 .home-page {
   /* margin-top: 6rem; */
-  padding: 10rem 0;
+  padding-top: 10rem;
+
   /* margin-bottom: 4rem; */
-  background: var(--bg-main);
+  background: var(--primary);
   position: relative;
+
+  border: var(--border);
+  border-bottom: none;
 }
 
 .hero-greeting {
   font-size: 1.3rem;
-  color: #E64833;
+  color: var(--secondary);
   font-weight: 700;
   letter-spacing: 2px;
   animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 .hero-section {
@@ -25,6 +36,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-bottom: 4rem;
   padding: 1rem;
   width: 90%;
   max-width: 1000px;
@@ -34,29 +46,8 @@
   text-align: center;
   position: relative;
 
-  /* border: 1px solid black;; */
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 1px;
-  background: #244855;
-}
-
-.hero-section::after {
-  content: '';
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 1px;
-  background: #244855;
+  border: 1rem solid black;
+  border-radius: 40px;
 }
 
 .hero-content {
@@ -68,12 +59,11 @@
 
 .hero-title {
   font-size: 4.5rem;
-  color: #244855;
+  color: var(--secondary);
   margin: 1rem 0;
   letter-spacing: 3px;
   font-weight: 900;
   line-height: 1.2;
-  font-family: 'IBM Plex Mono', monospace;
 }
 
 /* TYPEWRITER EFFECT */
@@ -81,11 +71,12 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #244855; /* cursor */
-  
+  border-right: 3px solid var(--secondary);
+  /* cursor */
+
   width: 0;
   animation: typing 2.5s steps(20, end) forwards,
-             blink 0.7s step-end infinite;
+    blink 0.7s step-end infinite;
 }
 
 /* MULTI-LINE SUPPORT */
@@ -95,18 +86,25 @@
 
 /* TYPING */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 /* CURSOR BLINK */
 @keyframes blink {
-  50% { border-color: transparent }
+  50% {
+    border-color: transparent
+  }
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
-  color: #E64833;
+  color: var(--secondary);
   margin: 0;
   font-weight: 600;
   letter-spacing: 1px;
@@ -114,25 +112,27 @@
 
 .hero-description {
   font-size: 1.1rem;
-  color: #244855;
+  color: var(--secondary);
   line-height: 1.9;
   margin: 1rem 0;
   font-weight: 400;
 }
 
-.hero-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin: 10rem 0;
-  align-items: center;
-  width: 100%;
+.quick-links{
+  margin: auto;
+  border-top: var(--border-card);
+  padding: 2rem;
+  /* width: 60%; */
 }
 
-.hero-buttons .btn {
-  min-width: 220px;
-  text-transform: uppercase;
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
 }
+
 
 .hero-image {
   display: none;
@@ -143,126 +143,74 @@
 }
 
 .featured-section {
-  margin: 6rem 0;
-  padding: 8rem 2rem;
-  /* width: 90%; */
-  /* max-width: 1000px; */
+  padding-bottom: 8rem;
+  /* padding: 8rem 2rem; */
   text-align: center;
-  background: transparent;
-  background-color: var(--bg-secondary);
+  border-top: var(--border-card);
 }
 
-.featured-section h2 {
-  color: #244855;
-  font-size: 2.8rem;
-  margin-bottom: 3rem;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  animation: slideInRight 0.8s ease;
+.container h2{
+  margin: 1rem;
+  text-align: left;
+  font-size: 4rem;
+  letter-spacing: 1px;
 }
 
 @keyframes slideInRight {
-  from { opacity: 0; transform: translateX(30px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: 50% 50%;
   gap: 2rem;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 1rem;
 }
-
-.skill-card {
-  background: #244855;
-  padding: 2rem 1.5rem;
-  border-radius: 0.75rem;
-  border: 1px solid #E64833;
-  font-weight: 600;
-  color: #FBE9D0;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  min-height: 150px;
-  justify-content: center;
-}
-
-.skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(230, 72, 51, 0.3);
-  border-color: #90AEAD;
-}
-
-.skill-icon {
-  font-size: 3rem;
-  transition: transform 0.3s ease;
-}
-
-.skill-card:hover .skill-icon {
-  transform: scale(1.2) rotate(10deg);
-}
-
-.skill-name {
-  font-size: 1rem;
-}
-
-
-.skill-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(144, 174, 173, 0.2);
-  border-color: #E64833;
-}
-
 
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 a.active .menu-button {
-    border-color: #f8b4d8;
-    background-color: rgba(248, 180, 216, 0.15);
+  border-color: #f8b4d8;
+  background-color: rgba(248, 180, 216, 0.15);
 }
 
-.btn {
-    padding: 0.75rem 1.5rem;
-    border: 2px dashed #E64833;
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-    letter-spacing: 1px;
+.button {
+  padding: 1.5rem;
+  color: var(--secondary);
+  background-color: var(--secondary-light);
+  /* width: 200px; */
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border: var(--border-card);
 }
 
-.btn-primary {
-    background: linear-gradient(135deg, #E64833 0%, #90AEAD 100%);
-    color: #244855;
-    border: 2px dashed #244855;
-    font-weight: 700;
+.button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
-.btn-primary:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 24px rgba(230, 72, 51, 0.4);
+.hero-buttons .button {
+  border-right: none;
 }
 
-.btn-secondary {
-    background-color: transparent;
-    border: 2px dashed #90AEAD;
-    color: #90AEAD;
+.hero-buttons .button:last-child {
+  border-right: var(--border-card)  
 }
-
-.btn-secondary:hover {
-    background-color: rgba(144, 174, 173, 0.1);
-    border-color: #E64833;
-    color: #E64833;
-    transform: translateY(-2px);
-}
-

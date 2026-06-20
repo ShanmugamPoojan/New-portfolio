@@ -1,20 +1,14 @@
 .footer {
-  /* margin-top: 4rem; */
-  /* margin: 2rem; */
   padding: 1rem;
-  border-top: 5px solid var(--border);
-  /* backdrop-filter: blur(8px); */
-  background: var(--button);
-  /* box-shadow: 5px 5px black; */
-  
+  padding-bottom: 0;
+
+  background: var(--primary);
+  color: var(--secondary);
+
+  border: var(--border);
+  border-top: var(--border-card);
+  border-radius: 0 0 30px 30px;
 }
-
-.footer:hover {
-  box-shadow: 10px 10px black;
-}
-
-
-/* TOP SECTION */
 .footer-top {
   display: flex;
   justify-content: space-evenly;
@@ -22,18 +16,6 @@
   gap: 2rem;
 }
 
-/* BRAND */
-.footer-brand h2 {
-  font-family: 'Playfair Display';
-  color: var(--text-main);
-}
-
-.footer-brand p {
-  color: var(--text-main);
-  font-size: 0.9rem;
-}
-
-/* SOCIALS */
 .footer-socials {
   display: flex;
   flex-direction: row;
@@ -44,37 +26,33 @@
   text-decoration: none;
   color: var(--text-main);
   font-weight: bold;
+  position: relative;
 }
 
 .footer-socials a:hover {
   color: var(--accent);
 }
 
-/* BOTTOM */
-.footer-bottom {
-  /* margin-top: 2rem; */
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-main);
-}
 
-.footer a {
-  position: relative;
-}
-
-.footer a::after {
+.footer-socials a::after {
   content: "";
   position: absolute;
   width: 0%;
-  height: 1px;
+  height: 2px;
   bottom: -3px;
   left: 0;
-  background: var(--accent);
+  background: var(--secondary);
   transition: 0.3s;
 }
 
-.footer a:hover::after {
+.footer-socials a:hover::after {
   width: 100%;
+}
+
+.footer-bottom {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
@@ -88,3 +66,4 @@
     align-items: center;
   }
 }
+

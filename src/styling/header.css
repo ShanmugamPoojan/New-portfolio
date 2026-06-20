@@ -1,15 +1,17 @@
 .header {
-  box-sizing: border-box;
   position: fixed;
-  /* height: 5rem; */
-  width: 100%;
-  display: flex;
-  /* justify-content: space-evenly; */
-  /* align-items: flex-start; */
-
-  background: var(--button);
-  border: 5px solid var(--border);
   z-index: 1000;
+
+  margin: 0 auto;
+  width: 100%;
+
+  display: flex;
+
+  background: var(--secondary-light);
+  border: var(--border);
+  border-bottom: var(--border-card);
+  border-radius: 26px 26px 0 0;
+
 }
 
 .nav-links {
@@ -17,32 +19,32 @@
 }
 
 .nav-item {
-  width: 10rem;
-  height: 4rem;
+  padding: 1rem 1.5rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   text-decoration: none;
-  font-family: 'IBM Plex Mono';
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
 
-  color: var(--text-main);
+  color: var(--secondary);
   position: relative;
 }
 
 /* HOVER */
 .nav-item:hover {
-  background: var(--text-main);
-  color: var(--accent);
+  background: var(--secondary);
+  color: var(--primary);
+  transition: all 0.3s ease-in-out;
 }
 
 /* ACTIVE */
 .nav-item.active {
-  color: var(--accent);
-    background: var(--text-main);
+  color: var(--primary);
+  background: var(--secondary);
+
 }
 
 /* UNDERLINE */
@@ -53,14 +55,13 @@
   left: 20%;
   width: 0%;
   height: 2px;
-  background: var(--accent);
+  background: var(--primary);
   transition: 0.3s;
 }
 
 .nav-item:hover::after {
   width: 60%;
 }
-
 
 /* ENTRY */
 .slide-in {

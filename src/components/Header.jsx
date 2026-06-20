@@ -13,6 +13,9 @@ function Header() {
         <header className="header">
 
             <nav className="nav-links">
+                <Link to="/pokemon" className={`nav-item ${isActive('/pokemon') ? 'active' : ''}`}>
+                    !?
+                </Link>
                 <Link to="/" className={`nav-item ${isActive('/') ? 'active' : ''}`}>
                     Home
                 </Link>

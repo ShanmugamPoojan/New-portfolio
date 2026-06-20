@@ -11,11 +11,11 @@ function Footer() {
           <a href="#">LinkedIn</a>
           <a href="#">Email</a>
         </div>
-
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 Shanmugam Poojan S — You can, if you think you can!</p>
+        <p>2026 - Made with Love by Shanmugam Poojan S</p>
+        <p>You can, if you think you can!</p>
       </div>
 
     </footer>

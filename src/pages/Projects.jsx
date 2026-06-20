@@ -14,17 +14,18 @@ function Projects() {
   return (
     <div className="projects-page">
       <div className="projects-header">
-        <h1>🎯 My Projects</h1>
         <p>Showcasing my best work and technical skills</p>
       </div>
-      <div className="projects-grid">
-        {items.map((item) => (
-          <div key={item.id} className="card-container">
-            <div className="project-icon">{item.icon}</div>
-            <Card item={item} />
-            <Gallery item={item} />
-          </div>
-        ))}
+      <div className="cards-list scatter-pattern">
+        <div className="container">
+          <h2>My Projects</h2>
+          {items.map((item) => (
+              <Card item={item} />
+            // <div key={item.id} className="card-container">
+            //   <Gallery item={item} />
+            // </div>
+          ))}
+        </div>
       </div>
     </div>
   );

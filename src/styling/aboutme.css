@@ -1,24 +1,25 @@
 .aboutme-page {
-  /* margin-top: 6rem; */
-  padding: 6rem 0;
-  width: 100%;
-  background: #FBE9D0;
-  /* padding-bottom: 2rem; */
+
+  padding: 4rem 0;
+  background-color: var(--primary);
+  border-left: var(--border);
+  border-right: var(--border);
 }
 
-.about-container {
-  max-width: 85%;
-  margin: 0 auto;
-  padding: 2rem;
+.about-content {
+  padding: 4rem 0;
+  border-top: var(--border-card);
+  border-bottom: var(--border-card);
 }
 
 .about-header {
   text-align: center;
-  margin-bottom: 3rem;
+  padding: 4rem;
+  /* margin-bottom: 3rem; */
 }
 
 .about-header h1 {
-  color: #244855;
+  /* color: #244855; */
   font-size: 3rem;
   margin: 0;
   font-weight: 900;
@@ -27,137 +28,17 @@
   animation: slideInLeft 0.8s ease;
 }
 
-@keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-30px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
 .about-header .subtitle {
-  color: #E64833;
+  /* color: #E64833; */
   font-size: 1.2rem;
   margin: 1rem 0 0 0;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
-.about-content {
-  background: transparent;
-  border: none;
-  border-radius: 1rem;
-  padding: 2rem;
-}
-
 .about-intro,
 .about-section {
   margin-bottom: 3rem;
-}
-
-.about-intro h2,
-.about-section h2 {
-  color: #244855;
-  font-size: 2rem;
-  margin: 0 0 1.5rem 0;
-  border-bottom: 2px dashed #E64833;
-  padding-bottom: 1rem;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
-.about-intro p,
-.about-section p {
-  color: #244855;
-  line-height: 1.9;
-  font-size: 1rem;
-}
-
-.experience-item {
-  background: #244855;
-  border-left: 4px dashed #E64833;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 0.5rem;
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  transition: all 0.3s ease;
-}
-
-.experience-item:hover {
-  background: rgba(36, 72, 85, 0.9);
-  transform: translateX(10px);
-  box-shadow: 0 4px 12px rgba(230, 72, 51, 0.2);
-}
-
-.exp-icon {
-  font-size: 2.5rem;
-  flex-shrink: 0;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-}
-
-.exp-content {
-  flex: 1;
-}
-
-.experience-item h3 {
-  color: #FBE9D0;
-  margin: 0 0 0.5rem 0;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.experience-item .duration {
-  color: #90AEAD;
-  font-weight: 700;
-  font-size: 0.95rem;
-  margin: 0;
-  letter-spacing: 1px;
-}
-
-.experience-item p:last-child {
-  margin: 0.8rem 0 0 0;
-  color: #FBE9D0;
-  line-height: 1.6;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.skill-badge {
-  background: #244855;
-  color: #FBE9D0;
-  padding: 0.7rem 1.2rem;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  display: inline-block;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: 1px dashed #E64833;
-}
-
-.skill-badge:hover {
-  transform: scale(1.1) translateY(-3px);
-  box-shadow: 0 6px 16px rgba(230, 72, 51, 0.3);
-  border-color: #90AEAD;
-}
-
-@keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-30px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
 }
 
 @media (max-width: 768px) {
@@ -173,12 +54,4 @@
   .about-section h2 {
     font-size: 1.4rem;
   }
-}
-
-.section {
-  border: 2px solid var(--border);
-  padding: 2rem;
-  margin: 2rem;
-  background: var(--bg-secondary);
-  box-shadow: 5px 5px 0px var(--border);
 }
