@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import '../styling/header.css'
 import '../styling/card.css'
-import logo from '../assets/logo.png'
 import { useState } from 'react';
 
 function Header() {

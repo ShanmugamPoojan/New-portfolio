@@ -9,6 +9,11 @@
   border-top: var(--border-card);
   border-radius: 0 0 30px 30px;
 }
+
+p {
+  margin: 0.2rem auto;
+}
+
 .footer-top {
   display: flex;
   justify-content: space-evenly;
@@ -33,7 +38,6 @@
   color: var(--accent);
 }
 
-
 .footer-socials a::after {
   content: "";
   position: absolute;
@@ -50,7 +54,7 @@
 }
 
 .footer-bottom {
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
   text-align: center;
   font-size: 0.8rem;
 }
@@ -66,4 +70,3 @@
     align-items: center;
   }
 }
-

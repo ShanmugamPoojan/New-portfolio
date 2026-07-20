@@ -17,19 +17,7 @@
   letter-spacing: 2px;
   animation: bounce 2s infinite;
 }
-
-@keyframes bounce {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
+ 
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -37,7 +25,7 @@
   justify-content: center;
   margin: auto;
   margin-bottom: 4rem;
-  padding: 1rem;
+  padding: 2rem;
   width: 90%;
   max-width: 1000px;
   background: transparent;
@@ -64,6 +52,8 @@
   letter-spacing: 3px;
   font-weight: 900;
   line-height: 1.2;
+    text-align: left;
+
 }
 
 /* TYPEWRITER EFFECT */
@@ -118,30 +108,6 @@
   font-weight: 400;
 }
 
-.quick-links{
-  margin: auto;
-  border-top: var(--border-card);
-  padding: 2rem;
-  /* width: 60%; */
-}
-
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-
-}
-
-
-.hero-image {
-  display: none;
-}
-
-.image-placeholder {
-  display: none;
-}
-
 .featured-section {
   padding-bottom: 8rem;
   /* padding: 8rem 2rem; */
@@ -149,12 +115,6 @@
   border-top: var(--border-card);
 }
 
-.container h2{
-  margin: 1rem;
-  text-align: left;
-  font-size: 4rem;
-  letter-spacing: 1px;
-}
 
 @keyframes slideInRight {
   from {
@@ -186,31 +146,4 @@ a {
 a.active .menu-button {
   border-color: #f8b4d8;
   background-color: rgba(248, 180, 216, 0.15);
-}
-
-.button {
-  padding: 1.5rem;
-  color: var(--secondary);
-  background-color: var(--secondary-light);
-  /* width: 200px; */
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  letter-spacing: 1px;
-  border: var(--border-card);
-}
-
-.button:hover {
-  background-color: var(--secondary);
-  color: var(--primary);
-}
-
-.hero-buttons .button {
-  border-right: none;
-}
-
-.hero-buttons .button:last-child {
-  border-right: var(--border-card)  
 }

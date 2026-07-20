@@ -14,7 +14,8 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>2026 - Made with Love by Shanmugam Poojan S</p>
+        <p>
+          <b>{`</>`}</b> Made with Love by Shanmugam Poojan S</p>
         <p>You can, if you think you can!</p>
       </div>
 

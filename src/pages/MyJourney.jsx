@@ -13,25 +13,23 @@ function MyJourney() {
   }, []);
 
   return (
-    <div className="journey-page">
-      <div className="journey-container">
-        <div className="journey-header">
+    <div className="journey-page main-page">
+        <div className="journey-header main-page-header">
           <h1>My Journey</h1>
           <p className="subtitle">From beginner to developer</p>
         </div>
 
-        <div className="cards-list scatter-pattern">
+        <div className="cards-container scatter-pattern">
           <div className='container'>
             <h2>Heloo</h2>
-            {journeyData.map((item) => (
-              <Card item={item} />
+            {journeyData.map((item, index) => (
+              <Card item={{ 'index': index + 1, ...item }} />
               // <Card item={{"title": "Hello", "description": "Hello des"}}></Card>
             ))}
           </div>
         </div>
 
       </div>
-    </div>
   );
 }
 

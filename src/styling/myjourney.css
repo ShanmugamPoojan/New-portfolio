@@ -1,22 +1,3 @@
-.journey-page {
-  padding: 8rem 0 0 0;
-  /* width: 100%; */
-  background-color: var(--primary);
-  /* padding-bottom: 2rem; */
-  border-left: var(--border);
-  border-right: var(--border);
-}
-
-.journey-container {
-  /* max-width: 85%; */
-  margin: 0 auto;
-  /* padding: 2rem; */
-}
-
-.journey-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
 
 .journey-header h1 {
   /* color: #244855; */
@@ -48,23 +29,6 @@
   letter-spacing: 1px;
 }
 
-.cards-list {
-  padding: 4rem 0 6rem 0;
-
-  border-top: var(--border-card);
-  /* border-bottom: var(--border-card); */
-  overflow-x: auto; 
-  
-}
-
-.container .card{
-  margin-bottom: 2rem;
-}
-
-.container > h2{
-  margin-left: 0;
-  margin-right: 0;
-}
 
 .timeline > .container::-webkit-scrollbar {
     display: none;

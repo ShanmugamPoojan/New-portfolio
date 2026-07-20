@@ -1,8 +1,19 @@
+.cards-container {
+  padding: 3rem 0 6rem 0;
+
+  border-top: var(--border-card);
+  /* border-bottom: var(--border-card); */
+  /* overflow-x: auto;   */
+}
+
+.container .card{
+  margin-bottom: 2rem;
+}
+
+
 .card {
     min-height: 350px;
     width: 100%;
-
-    /* margin: 1rem; */
 
     background-color: var(--primary);
 
@@ -10,17 +21,45 @@
     box-shadow: var(--shadow-hover);
 
     text-align: left;
+    /* animation: slideInUp 0.8s ease; */
+    opacity: 0;
+    transform: translateY(30px);
 }
 
-.card:hover {
-    /* box-shadow: var(--shadow); */
-    cursor: pointer;
+.card.visible {
+    animation: slideInUp 0.8s ease forwards;
+    transform: scale(1);
 }
 
-.card:active {
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.card-description-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.card-description-wrapper.expanded {
+    max-height: 500px;
+    /* adjust if needed */
+    opacity: 1;
+}
+
+/* .card:active {
     box-shadow: 0 0 0 0;
-    transform: scale(0.995);
-}
+    transform: scale(0.99);
+} */
 
 .card-circle-container {
     position: relative;
@@ -47,6 +86,8 @@
     display: flex;
 
     background-color: var(--secondary-light);
+    border-bottom: var(--border-card);
+
 
     font-size: var(--font-title);
     font-weight: 800;
@@ -58,20 +99,34 @@
 }
 
 .card-image {
-    border-top: var(--border-card);
+    border-bottom: var(--border-card);
 }
 
-.card-image{
+.card-image {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: row;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .card-image > img {
     height: 300px;
-    width: 50%;
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
     object-position: center;
+}
+
+.card-image img {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 .card-buttons {
@@ -82,23 +137,107 @@
     padding: 2rem;
     text-align: justify;
     line-height: 1.6;
-    border-top: var(--border-card);
+    /* border-top: var(--border-card); */
     font-size: 1.3rem;
     font-weight: 500;
 
     transition: all 0.6s ease-in-out;
 }
 
-.card-description > h1{
+.card-description span {
+    transition: all 0.6s ease-in-out;
+}
+
+.card-description > h1 {
     margin: 0;
 }
 
-.card .button {
+.card .card-buttons .button {
     margin: 2rem;
     margin-right: 0;
     padding: 1rem;
 }
 
-.card-description-expanded .view-less{
+.card-description-expanded .view-less {
     display: none;
+}
+
+
+.projects-page .card .button {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.journey-page .card .button {
+    margin-top: 0;
+}
+.about-page .card .button {
+    margin-top: 0;
+}
+
+
+/* ==================== Gallery ================================ */
+
+.gallery {
+    margin: 1.5rem;
+    border: var(--border-card);
+    /* height: 400px; */
+    /* width: 400px; */
+    /* background-color: var(--secondary-light); */
+    /* border-radius: 20px; */
+}
+
+.gallery-main {
+    /* margin: 0.7rem; */
+    /* height: 300px; */
+    /* border-radius: 20px; */
+    /* background-color: var(--primary); */
+    /* border: var(--border-card); */
+    object-fit: contain;
+    object-position: center;
+}
+
+.gallery-content {
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 60% 40%;
+}
+
+.gallery-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.gallery-buttons > button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 50px;
+    /* height: 50px; */
+    font-weight: bold;
+    border: var(--border-card);
+    color: var(--secondary);
+    /* border-radius: 20px; */
+    background-color: var(--primary);
+    text-align: center;
+
+}
+
+.gallery-buttons > button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.gallery-buttons>button:active {
+    transform: scale(0.9);
+}
+
+.gallery-image {
+    width: 100%;
+    /* height: 100%; */
+    /* border-radius: 20px; */
+    object-fit: contain;
+    object-position: center;
 }
