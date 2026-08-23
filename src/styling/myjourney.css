@@ -1,14 +1,4 @@
 
-.journey-header h1 {
-  /* color: #244855; */
-  font-size: 3rem;
-  margin: 0;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  animation: slideInDown 0.8s ease;
-}
-
 @keyframes slideInDown {
   from {
     opacity: 0;
@@ -30,69 +20,6 @@
 }
 
 
-.timeline > .container::-webkit-scrollbar {
-    display: none;
-}
-
-
-@media (max-width: 768px) {
-  .journey-container {
-    max-width: 95%;
-  }
-
-  .journey-header h1 {
-    font-size: 2rem;
-  }
-
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline-item {
-    grid-template-columns: 1fr;
-    margin-left: 80px;
-  }
-
-  .timeline-item:nth-child(odd) {
-    direction: ltr;
-  }
-
-  .timeline-marker {
-    left: 20px;
-  }
-
-  .achievements-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .journey-container {
-    max-width: 95%;
-  }
-
-  .journey-header h1 {
-    font-size: 2rem;
-  }
-
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline-item {
-    grid-template-columns: 1fr;
-    margin-left: 80px;
-  }
-
-  .timeline-item:nth-child(odd) {
-    direction: ltr;
-  }
-
-  .timeline-marker {
-    left: 20px;
-  }
-
-  .achievements-list {
-    grid-template-columns: 1fr;
-  }
+.timeline>.container::-webkit-scrollbar {
+  display: none;
 }

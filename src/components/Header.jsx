@@ -12,7 +12,7 @@ function Header() {
         <header className="header">
 
             <nav className="nav-links">
-                <Link to="/pokemon" className={`nav-item ${isActive('/pokemon') ? 'active' : ''}`}>
+                <Link to="/about" className={`nav-item ${isActive('/about') ? 'active' : ''}`}>
                     !?
                 </Link>
                 <Link to="/" className={`nav-item ${isActive('/') ? 'active' : ''}`}>
@@ -27,9 +27,9 @@ function Header() {
                     My Journey
                 </Link>
 
-                <Link to="/aboutme" className={`nav-item ${isActive('/aboutme') ? 'active' : ''}`}>
+                {/* <Link to="/aboutme" className={`nav-item ${isActive('/aboutme') ? 'active' : ''}`}>
                     About
-                </Link>
+                </Link> */}
             </nav>
 
         </header>

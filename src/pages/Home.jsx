@@ -16,10 +16,10 @@ function Home() {
 
   return (
     <div className="home-page main-page">
-      <div className='hero-section'>
+      <div className='hero-section container'>
         <div className='hero-content'>
           <h1 className='hero-title'>
-            <span className='typewriter'>Hey, <br />I'm Shanmugam Poojan</span>
+            <span className='typewriter'>Hello world, <br />I'm Shanmugam Poojan</span>
           </h1>
           {/* <p className='hero-title'>{heroData.title}</p> */}
           <p className='hero-subtitle'>{homeData.hero.subtitle}</p>
@@ -28,7 +28,6 @@ function Home() {
       </div>
       <div className='cards-container scatter-pattern'>
         <div className='container'>
-          <h2>Overview</h2>
           <Card item={homeData.overview}/>
         </div>
       </div>

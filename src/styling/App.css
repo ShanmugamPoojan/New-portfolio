@@ -21,12 +21,12 @@
 }
 
 html {
-  cursor: url(/portfolio/assets/cursor.png), auto;
+  cursor: url(/myportfolio/assets/cursor.png), auto;
 }
 
 a:hover,
 button:hover {
-  cursor: url(/portfolio/assets/cursor-pointer.png), auto;
+  cursor: url(/myportfolio/assets/cursor_pointer.png), auto;
 }
 
 html {
@@ -57,11 +57,10 @@ h3 {
 
 .page {
   min-height: 85vh;
-  ;
 }
 
 .scatter-pattern {
-  background-image: url("/assets/pattern-grey.svg");
+  background-image: url("/myportfolio/assets/pattern-grey.svg");
   background-size: 6px;
 }
 
@@ -94,7 +93,7 @@ h2>span:hover {
 
 .main-page {
   margin: auto;
-  padding: 6rem 0 0 0;
+  padding: 4rem 0 0 0;
   width: 100%;
   min-height: 70vh;
   background: var(--primary);
@@ -103,13 +102,16 @@ h2>span:hover {
 }
 
 .main-page-header {
-  text-align: center;
-  padding: 4rem 2rem;
+  text-align: justify;
+  padding: 2rem 6rem;
   background: transparent;
   border: none;
   position: relative;
 }
 
+.main-page-header h2{
+  font-size: 3rem;
+}
 /* ======================= Container ================================= */
 
 .container {
@@ -117,13 +119,6 @@ h2>span:hover {
   padding: 1rem;
   width: 80vw;
   max-width: 1200px;
-}
-
-.container h2 {
-  margin: 1rem 0;
-  text-align: left;
-  font-size: 3rem;
-  letter-spacing: 1px;
 }
 
 /* =================== Buttons =============================== */
@@ -142,4 +137,138 @@ h2>span:hover {
 .button:hover {
   background-color: var(--secondary);
   color: var(--primary);
+}
+
+/* ======================= Responsive Design ======================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .main-page {
+    padding: 4rem 0 0 0;
+    border-width: 1rem;
+  }
+
+  .main-page-header {
+    padding: 3rem 1.5rem;
+  }
+
+  .container {
+    width: 90vw;
+    /* padding: 1rem; */
+  }
+
+  .container h2 {
+    font-size: 2.5rem;
+  }
+
+  .button {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+  html {
+    cursor: auto;
+  }
+
+  a:hover,
+  button:hover {
+    cursor: pointer;
+  }
+
+  .page {
+    min-height: 90vh;
+  }
+
+  .main-page {
+    padding: 3rem 0 0 0;
+    min-height: 80vh;
+    border: 0.7rem solid var(--secondary);
+    border-bottom: none;
+  }
+
+  .main-page-header {
+    padding: 2.5rem 1rem;
+  }
+
+  .container {
+    width: 95vw;
+    /* padding: 0.75rem; */
+  }
+
+  .container h2 {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+
+  .page {
+    min-height: 90vh;
+  }
+
+  .main-page {
+    padding: 2rem 0 0 0;
+    min-height: 85vh;
+    border-width: 0.5rem;
+  }
+
+  .main-page-header {
+    padding: 2rem 0.75rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container h2 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .button {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+
+  .main-page {
+    padding-top: 1.5rem;
+  }
+
+  .main-page-header {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
 }

@@ -6,6 +6,7 @@ function Pokemon() {
   const [expanded, setExpanded] = useState(false);
   const cardRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const assetBase = `${import.meta.env.BASE_URL}assets/`;
 
   const item = {
     "index": 1,
@@ -89,8 +90,8 @@ function Pokemon() {
               <div className="gallery">
                 <div className="gallery-main">
                   <img
-                    // src={`/portfolio/assets/${images[imageIndex]}`}
-                    src={`/portfolio/assets/${item.image}`}
+                    // src={`${assetBase}${images[imageIndex]}`}
+                    src={`${assetBase}${item.image}`}
                     alt="gallery"
                     className="gallery-image"
                   />

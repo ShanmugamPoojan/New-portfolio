@@ -15,7 +15,8 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          <b>{`</>`}</b> Made with Love by Shanmugam Poojan S</p>
+          <b>{`<>`}</b> Inspired from <a href="https://mac-template.webflow.io/" target="_blank" rel="noopener noreferrer"> <u>mac-template</u></a> <b>{`</>`}</b>
+        </p>
         <p>You can, if you think you can!</p>
       </div>
 

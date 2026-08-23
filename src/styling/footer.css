@@ -29,13 +29,9 @@ p {
 
 .footer-socials a {
   text-decoration: none;
-  color: var(--text-main);
+  color: var(--secondary);
   font-weight: bold;
   position: relative;
-}
-
-.footer-socials a:hover {
-  color: var(--accent);
 }
 
 .footer-socials a::after {
@@ -59,14 +55,130 @@ p {
   font-size: 0.8rem;
 }
 
+
+/* ======================= Footer Responsive Design ======================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .footer {
+    padding: 1rem;
+    border-width: 1rem;
+    border-top-width: 0.25rem;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .footer-top {
+    gap: 1.5rem;
+  }
+
+  .footer-socials {
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+/* Mobile Devices */
 @media (max-width: 768px) {
+
+  .footer {
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+
+    border-width: 0.7rem;
+    border-top-width: 0.25rem;
+    border-radius: 0 0 18px 18px;
+  }
+
   .footer-top {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
     text-align: center;
   }
 
-  .footer-links,
   .footer-socials {
+    justify-content: center;
     align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
   }
+
+  .footer-socials a {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+  }
+
+}
+
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+
+  .footer {
+    padding: 0.8rem;
+    padding-bottom: 0.4rem;
+
+    border-width: 0.5rem;
+    border-top-width: 0.2rem;
+    border-radius: 0 0 14px 14px;
+  }
+
+  .footer-top {
+    gap: 1rem;
+  }
+
+  .footer-socials {
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-socials a {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
+}
+
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+
+  .footer {
+    padding: 0.6rem;
+    padding-bottom: 0.3rem;
+    border-width: 0.4rem;
+  }
+
+  .footer-top {
+    gap: 0.8rem;
+  }
+
+  .footer-socials {
+    gap: 0.7rem;
+  }
+
+  .footer-socials a {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.65rem;
+  }
+
 }

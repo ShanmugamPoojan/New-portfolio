@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import portfolioData from '../data/portfolio.json';
 import Card from '../components/Card';
-import '../styling/aboutme.css';
+import '../styling/about.css';
 
-function AboutMe() {
+function About() {
   const [aboutData, setAboutData] = useState(null);
   const [experienceData, setExperienceData] = useState([]);
   const [skillsList, setSkillsList] = useState([]);
@@ -18,9 +18,9 @@ function AboutMe() {
 
   return (
     <div className="about-page main-page">
-      <div className="about-header main-page-header">
-        <h1>👤 About Me</h1>
-        <p className="subtitle">Get to know me better</p>
+      <div className="about-header main-page-header container">
+        <h2>About Me</h2>
+        <p className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor obcaecati numquam quod repellat ut, nulla, fugit soluta tempora hic illo recusandae autem facilis eum. Excepturi nobis sint impedit voluptas dignissimos minus, voluptatibus ipsum eligendi iste ea, distinctio hic cum? Sed rem natus debitis necessitatibus! Temporibus tenetur iusto atque corporis?</p>
       </div>
 
       <div className="cards-container scatter-pattern">
@@ -31,8 +31,6 @@ function AboutMe() {
           </div>
 
           <div className="about-section ">
-
-            <h2>Experience</h2>
             {experienceData.map((exp, ind) => (
               <Card item={{ 'index': ind + 1, ...exp }} />
             ))}
@@ -44,4 +42,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe;
+export default About;
